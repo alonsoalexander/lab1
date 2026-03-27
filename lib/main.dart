@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lab1/pages/main_view.dart';
 
+//kuksscssd
 void main() {
   runApp(const MyApp());
 }
@@ -23,5 +24,11 @@ class MyApp extends StatelessWidget {
       // The starting page of the app
       home: const MainView(),
     );
+  }
+
+  @override
+  StatelessElement createElement() {
+    // TODO: implement createElement
+    return super.createElement();
   }
 }

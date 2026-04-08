@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lab1/pages/main_view.dart';
 
-//kuksscssd
 void main() {
   runApp(const MyApp());
 }

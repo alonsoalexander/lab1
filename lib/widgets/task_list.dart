@@ -16,7 +16,17 @@ class TaskList extends StatelessWidget {
       for (final task in tasks) 
         ListTile(
           leading: StatusIcon(task),
-          title: Text(task.title)),
+          title: Text(task.title),
+          onTap: (){
+            taskHandler.toggleTask(task);
+          },
+          trailing: IconButton(
+        icon: Icon(Icons.delete),
+        onPressed: () {
+          taskHandler.deleteTask(task);
+        },
+        ),
+        )
    ]);
   }
 }
